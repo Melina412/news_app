@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- - input section ====================== -->
+      <section class="input">
+        <h1>News App</h1>
+        <form onsubmit="return false">
+          <div class="search-field">
+            <!-- -------------------------------- -->
+
+            <label for="keyword">Suchbegriff</label>
+            <input type="text" id="keyword" />
+
+            <!-- -------------------------------- -->
+
+            <label for="lanInput">Sprache</label>
+            <select name="language" id="lanInput">
+              <option value="ar">Arabisch</option>
+              <option value="de" selected>Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="es">Spanisch</option>
+              <option value="fr">Französisch</option>
+              <option value="he">Hebräisch</option>
+              <option value="it">Italienisch</option>
+              <option value="nl">Niederländisch</option>
+              <option value="no">Norwegisch</option>
+              <option value="pt">Portugiesisch</option>
+              <option value="ru">Russisch</option>
+              <option value="sv">Schwedisch</option>
+              <option value="zh">Chinesisch</option>
+            </select>
+
+            <!-- -------------------------------- -->
+
+            <label for="sortInput">Sortieren nach</label>
+            <select name="sort" id="sortInput">
+              <option value="relevancy">Relevanz</option>
+              <option value="popularity">Popularität</option>
+              <option value="publishedAt">Neueste zuerst</option>
+            </select>
+          </div>
+          <input type="submit" id="submitButton" value="Suchen" />
+        </form>
+      </section>
+
+      <!-- - output section ===================== -->
+
+      <section class="data-output">
+        <p id="inputError"></p>
+        <div class="content-gallery"></div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

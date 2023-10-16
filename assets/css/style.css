@@ -1,0 +1,137 @@
+/* todo media queries  */
+/* todo css code zusammenfassen  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+/* - general style  */
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem auto 5rem auto;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* - input section  */
+
+form {
+  width: 45%;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+}
+
+.search-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+input,
+select {
+  font-size: 1.4rem;
+  border: 2px solid cadetblue;
+  border-radius: 2px;
+}
+
+#submitButton,
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#submitButton:hover {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+/* - output section  */
+
+#inputError {
+  font-size: 1.4rem;
+  color: crimson;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.data-output {
+  width: 100vw;
+}
+
+.content-gallery {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 5rem auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+p {
+  width: 80%;
+  text-align: justify;
+  hyphens: auto; /* Silbentrennung mit Bindestrich */
+  overflow-wrap: break-word;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: RobotoBold, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  hyphens: auto; /* Silbentrennung mit Bindestrich */
+  overflow-wrap: break-word;
+  width: 80%;
+}
+
+img {
+  width: 60%;
+  border-radius: 2px;
+}
